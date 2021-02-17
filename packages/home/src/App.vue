@@ -28,7 +28,7 @@
 
 <script>
 import Header from './Header.vue';
-import Carousel from 'dogDetail/Carousel';
+import { Carousel } from 'dog-detail/dist/remoteEntry';
 
 export default {
   components: {
