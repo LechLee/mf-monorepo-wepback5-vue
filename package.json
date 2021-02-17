@@ -1,0 +1,16 @@
+{
+	"name": "root",
+	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
+  "scripts": {
+		"start": "lerna run start  --stream -- --ignore-scripts",
+		"prepare": "lerna run prepare  --stream -- --ignore-scripts",
+		"bootstrap": "lerna run bootstrap  --stream -- --ignore-scripts",
+		"postinstall": "yarn bootstrap"
+	},
+	"devDependencies": {
+		"lerna": "^3.20.2"
+	}
+}
